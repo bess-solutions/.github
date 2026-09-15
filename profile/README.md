@@ -19,7 +19,9 @@ As renewable energy penetration grows, Battery Energy Storage Systems (BESS) are
 
 ### 🛠️ [open-bess-edge](https://github.com/bess-solutions/open-bess-edge)
 The **BESSAI Edge Gateway** is our flagship industrial passthrough and controller. It bridges substation hardware to dispatch algorithms:
-- **Industrial Drivers:** Native support for Modbus TCP, DNP3, IEC 60870-5-104, and IEEE 2030.5.
+- **Industrial Modbus Engine:** Native high-performance Modbus TCP client with register-level telemetry.
+- **Extensible Profile Schema:** Declarative register mapping for multi-vendor hardware (Huawei, SMA, Victron, BYD, Deye, GoodWe).
+- **Standards & Interoperability:** Certified telemetry schemas and protocol adapters mapped to grid code standards (CNE NTSyCS).
 - **Fast-Loop Agents:** Low-latency controllers for active/reactive power ramping and droop responses.
 - **Traceability:** Integrated compliance mapping directly from code assertions to regulatory sections.
 
@@ -31,7 +33,7 @@ The BESS Solutions edge gateway operates as the central controller on-site, conn
 
 ```mermaid
 graph LR
-    subgraph Facility ["⚡ BESS Facility (e.g., BESS LABANT)"]
+    subgraph Facility ["⚡ BESS Facility (Grid-Connected Storage)"]
         Inverters["🔌 PCS & Inverters (Huawei, SMA, Victron)"]
         Sensors["🌡️ BMS, SoC & Thermal Sensors"]
         Edge["🛡️ open-bess-edge (Local Gateway & SafetyGuard)"]
@@ -54,7 +56,7 @@ graph LR
 ## 📜 Compliance & Safety Focus
 
 We maintain a strict **Zero Mock Data Policy** across our financial and engineering planners. All models are calibrated against real-world grid data, local marginal costs (Cen), and physical battery parameters.
-- **IEC 62443 SL-2:** Integrated mTLS encryption, TOTP Multi-Factor Authentication, and rate-limiting middleware.
+- **IEC 62443 & OT Hardening:** Defense-in-depth architecture, local register bounds validation, rate-limiting, and auditable control logs.
 - **NTSyCS (Chile):** Active droop PFR controls (<2s) and ramp constraints (<10%/min) mapped to automated tests.
 
 ---
@@ -66,4 +68,4 @@ BESS Solutions is transitioning toward an open, multi-stakeholder governance mod
 - **Security:** To report vulnerabilities safely, consult our [SECURITY.md](https://github.com/bess-solutions/open-bess-edge/blob/main/SECURITY.md).
 
 ---
-*BESS Solutions SpA — Santiago / Linares, Chile — contact@bess-solutions.cl*
+*BESS Solutions SpA — Santiago / Linares, Chile — contacto@bess-solutions.cl*
