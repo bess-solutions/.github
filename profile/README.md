@@ -20,10 +20,24 @@ As renewable energy penetration grows, Battery Energy Storage Systems (BESS) are
 ### 🛠️ [open-bess-edge](https://github.com/bess-solutions/open-bess-edge)
 The **BESSAI Edge Gateway** is our flagship industrial passthrough and controller. It bridges substation hardware to dispatch algorithms:
 - **Industrial Modbus Engine:** Native high-performance Modbus TCP client with register-level telemetry.
-- **Extensible Profile Schema:** Declarative register mapping for multi-vendor hardware (Huawei, SMA, Victron, BYD, Deye, GoodWe).
-- **Standards & Interoperability:** Certified telemetry schemas and protocol adapters mapped to grid code standards (CNE NTSyCS).
+- **Extensible Profile Schema:** Declarative register mapping for multi-vendor hardware. Perfiles con nivel *unverified* (sin certificación en banco físico de pruebas).
+- **Standards & Interoperability:** Mapeo de parámetros y requisitos técnicos de la NTSyCS chilena en código comprobable por tests automáticos.
 - **Fast-Loop Agents:** Low-latency controllers for active/reactive power ramping and droop responses.
 - **Traceability:** Integrated compliance mapping directly from code assertions to regulatory sections.
+
+---
+
+### 🧪 [open-bess-sandbox](https://github.com/bess-solutions/open-bess-sandbox)
+Banco de pruebas multicontexto chileno (Utility SSCC, Generación Firme, BTM Peak Shaving, Arbitraje Cliente Libre). Integrado con el motor de `open-bess-edge` para simulación en lazo cerrado y validación regulatoria fail-closed con base legal verificada.
+
+### 📋 [bess-device-profiles](https://github.com/bess-solutions/bess-device-profiles)
+Fuente única de verdad (SSOT) de mapas de registros Modbus y CAN en formato JSON Schema abierto, incluyendo bindings canónicos y linters semánticos de longitud de palabra.
+
+### 🕹️ [bess-modbus-simulator](https://github.com/bess-solutions/bess-modbus-simulator)
+Servidor Modbus TCP asíncrono para emulación de planta y pruebas Hardware-in-the-Loop (HIL) y CI/CD. Compatible con `pymodbus>=3.9.2`.
+
+### 📚 [awesome-bess](https://github.com/bess-solutions/awesome-bess)
+Directorio curado de estándares, papers, herramientas de simulación y código abierto para almacenamiento de energía en baterías.
 
 ---
 
