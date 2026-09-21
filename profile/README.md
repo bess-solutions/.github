@@ -69,7 +69,7 @@ graph LR
 
 ## 📜 Compliance & Safety Focus
 
-We maintain a strict **Zero Mock Data Policy** across our financial and engineering planners. All models are calibrated against real-world grid data, local marginal costs (Cen), and physical battery parameters.
+We maintain a strict empirical precision and fail-closed validation policy across all models and controllers. All models are calibrated against real-world grid data, local marginal costs (Cen), and physical battery parameters.
 - **IEC 62443 & OT Hardening:** Defense-in-depth architecture, local register bounds validation, rate-limiting, and auditable control logs.
 - **NTSyCS (Chile):** Active droop PFR controls (<2s) and ramp constraints (<10%/min) mapped to automated tests.
 
