@@ -28,7 +28,7 @@ The **BESSAI Edge Gateway** is our flagship industrial passthrough and controlle
 ---
 
 ### 🧪 [open-bess-sandbox](https://github.com/bess-solutions/open-bess-sandbox)
-Banco de pruebas multicontexto chileno (Utility SSCC, Generación Firme, BTM Peak Shaving, Arbitraje Cliente Libre). Integrado con el motor de `open-bess-edge` para simulación en lazo cerrado y validación regulatoria fail-closed con base legal verificada.
+Banco de pruebas multicontexto chileno (Utility SSCC, Generación Firme, BTM Peak Shaving, Arbitraje Cliente Libre). Integrado con el motor de `open-bess-edge` para simulación en lazo cerrado y validación regulatoria fail-closed con reglas preliminares clasificadas como SUPUESTO a la espera de auditoría jurídica independiente.
 
 ### 📋 [bess-device-profiles](https://github.com/bess-solutions/bess-device-profiles)
 Fuente única de verdad (SSOT) de mapas de registros Modbus y CAN en formato JSON Schema abierto, incluyendo bindings canónicos y linters semánticos de longitud de palabra.
